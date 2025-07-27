@@ -75,9 +75,8 @@
 &kp C_MUTE  &kp LCTRL          &kp LEFT_GUI     &lt 4 ESC     &lt 2 TAB        &lt 1 ENTER    &kp ENTER        &lt 5 SPACE  &lt 6 BACKSPACE   &lt 3 DEL     &kp RIGHT_SHIFT   &kp DELETE
             >;
 
+            display-name = "Base";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "BASE";
-            label = "Base";
         };
 
         MOUSE {
@@ -89,13 +88,11 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &mkp LCLK       &mkp RCLK       &mkp MCLK       &trans           &trans
             >;
 
-            display-name = "layer1";
+            display-name = "Mouse";
             sensor-bindings = <&scroll_encoder>;
-            label = "Mouse";
         };
 
         NAV {
-            display-name = "Nav";
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6         &kp F7          &kp F8          &kp F9        &kp F10        &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp LG(Z)      &kp LG(V)       &kp LG(C)       &kp LG(HOME)  &kp LG(LS(Z))  &trans
@@ -104,8 +101,8 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans         &trans          &trans          &trans        &trans
             >;
 
+            display-name = "Navigation";
             sensor-bindings = <&scroll_encoder>;
-            label = "Nav";
         };
 
         MEDIA {
@@ -118,7 +115,7 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "Media";
+            display-name = "Media";
         };
 
         NUM {
@@ -142,7 +139,7 @@
 &trans  &trans    &trans           &kp GRAVE     &kp UNDER             &kp MINUS                &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Symbols";
+            display-name = "Symbols";
         };
 
         FUNC {
@@ -154,7 +151,7 @@
 &trans  &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "Functions";
+            display-name = "Functions";
         };
     };
 };
